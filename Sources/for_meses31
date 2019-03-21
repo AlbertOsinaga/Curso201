@@ -1,0 +1,17 @@
+using System;
+using static System.Console;
+using static System.Math;
+
+public class Program
+{
+  public static void Main()
+  {
+    // Array de strings
+    var meses31 = new [] {"Enero", "Marzo", "Mayo", "Julio","Agosto", "Octubre", "Diciembre"};
+    WriteLine("Meses del año que tienen 31 días");
+    for(int i = 0; i < meses31.Length; i++)
+    {
+      WriteLine(meses31[i]);
+    }
+  }
+}
