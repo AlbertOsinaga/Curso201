@@ -1,0 +1,18 @@
+using System;
+using static System.Console;
+
+public class Program
+{
+  public static void Main()
+  {
+    // Array de strings
+    var mesesno31 = new [] {"Febrero", "Abril", "Junio", "Septiembre","Noviembre"};
+    WriteLine("Meses del año que no tienen 31 días");
+    int i = 0;
+    while(i < mesesno31.Length)
+    {
+      WriteLine($"{i+1}) {mesesno31[i]}");
+      i++;
+    }
+  }
+}
