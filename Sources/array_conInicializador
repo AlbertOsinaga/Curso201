@@ -1,0 +1,20 @@
+using System; 
+using static System.Console;
+
+public class Program
+{
+  public static void Main()
+  {
+    SimpleArrays();
+  }
+
+  static void SimpleArrays()
+  {
+    WriteLine("Array con Inicializador");
+    string[] paises = new string[] 
+      {"Alemania", "Francia", "Italia", "Finlandia", "Suiza"};
+
+    foreach(var pais in paises)
+      WriteLine(pais);
+  }
+}

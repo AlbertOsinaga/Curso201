@@ -1,0 +1,20 @@
+using System; 
+using static System.Console;
+using static System.Math;
+
+public class Program
+{
+  public static void Main()
+  {
+    EligiendoPais();
+  }
+
+  static void EligiendoPais()
+  {
+    int i = (new Random(Abs((int)DateTime.Now.Ticks))).Next(5);
+    WriteLine("Array con Inicializador");
+    string[] paises = new string[] 
+      {"Alemania", "Francia", "Italia", "Finlandia", "Suiza"};
+    WriteLine($"País elegido: [{i}] {paises[i]}");
+  }
+}

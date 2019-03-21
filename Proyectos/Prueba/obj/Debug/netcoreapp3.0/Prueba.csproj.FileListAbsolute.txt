@@ -1,0 +1,12 @@
+/Users/luisosinaga/Dropbox/CursosLansoft/Curso201/Proyectos/Prueba/bin/Debug/netcoreapp3.0/Prueba
+/Users/luisosinaga/Dropbox/CursosLansoft/Curso201/Proyectos/Prueba/bin/Debug/netcoreapp3.0/Prueba.deps.json
+/Users/luisosinaga/Dropbox/CursosLansoft/Curso201/Proyectos/Prueba/bin/Debug/netcoreapp3.0/Prueba.runtimeconfig.json
+/Users/luisosinaga/Dropbox/CursosLansoft/Curso201/Proyectos/Prueba/bin/Debug/netcoreapp3.0/Prueba.runtimeconfig.dev.json
+/Users/luisosinaga/Dropbox/CursosLansoft/Curso201/Proyectos/Prueba/bin/Debug/netcoreapp3.0/Prueba.dll
+/Users/luisosinaga/Dropbox/CursosLansoft/Curso201/Proyectos/Prueba/bin/Debug/netcoreapp3.0/Prueba.pdb
+/Users/luisosinaga/Dropbox/CursosLansoft/Curso201/Proyectos/Prueba/obj/Debug/netcoreapp3.0/Prueba.csprojAssemblyReference.cache
+/Users/luisosinaga/Dropbox/CursosLansoft/Curso201/Proyectos/Prueba/obj/Debug/netcoreapp3.0/Prueba.csproj.CoreCompileInputs.cache
+/Users/luisosinaga/Dropbox/CursosLansoft/Curso201/Proyectos/Prueba/obj/Debug/netcoreapp3.0/Prueba.AssemblyInfoInputs.cache
+/Users/luisosinaga/Dropbox/CursosLansoft/Curso201/Proyectos/Prueba/obj/Debug/netcoreapp3.0/Prueba.AssemblyInfo.cs
+/Users/luisosinaga/Dropbox/CursosLansoft/Curso201/Proyectos/Prueba/obj/Debug/netcoreapp3.0/Prueba.dll
+/Users/luisosinaga/Dropbox/CursosLansoft/Curso201/Proyectos/Prueba/obj/Debug/netcoreapp3.0/Prueba.pdb

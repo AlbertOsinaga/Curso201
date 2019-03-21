@@ -1,0 +1,22 @@
+using System; 
+using static System.Console;
+
+public class Program
+{
+  public static void Main()
+  {
+    SimpleArrays();
+  }
+
+  static void SimpleArrays()
+  {
+    WriteLine("Array como en C# 1");
+    int[] nums = new int[3];
+    nums[0] = 100;
+    nums[1] = 200;
+    nums[2] = 300;
+
+    foreach(int i in nums)
+      WriteLine(i);
+  }
+}

@@ -1,0 +1,17 @@
+using System; 
+using static System.Console;
+
+public class Program
+{
+  public static void Main()
+  {
+    WriteLine("Array de Objects.");
+    object[] objetos = new object[4];
+    objetos[0] = 10;
+    objetos[1] = false;
+    objetos[2] = new DateTime(1969, 3, 24);
+    objetos[3] = "Julio";
+    foreach (object obj in objetos)
+      Console.WriteLine($"Tipo: {obj.GetType()}, Valor: {obj}");
+  }
+}
