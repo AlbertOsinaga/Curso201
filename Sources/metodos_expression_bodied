@@ -1,0 +1,20 @@
+using System;
+using static System.Console;
+
+public class GranPrograma
+{
+  public static void Main()
+  {
+    WriteLine($"106 + 237 = {Calculadora.Suma(106, 237)}");
+    WriteLine($"237 - 106 = {Calculadora.Resta(237, 106)}");
+    WriteLine($"237 * 106 = {Calculadora.Multiplicacion(237, 106)}");
+    WriteLine($"237 / 106 = {Calculadora.Division(237, 106)}");
+  }
+}
+public static class Calculadora
+{
+  public static int Suma(int x, int y) => x + y;
+  public static int Resta(int x, int y) => x - y;
+  public static int Multiplicacion(int x, int y) => x * y;
+  public static int Division(int x, int y) => x / y;
+} 

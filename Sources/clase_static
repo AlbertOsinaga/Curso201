@@ -1,0 +1,25 @@
+using System;
+using static System.Console;
+
+public class GranPrograma
+{
+  public static void Main()
+  {
+    int suma = Calculadora.Suma(106, 237);
+    int resta = Calculadora.Resta(237, 106);
+    WriteLine($"106 + 237 = {suma}");
+    WriteLine($"237 - 106 = {resta}");
+  }
+}
+  
+public static class Calculadora
+{
+  public static int Suma(int x, int y)
+  {
+    return x + y;
+  }
+  public static int Resta(int x, int y)
+  {
+    return x - y;
+  }
+} 

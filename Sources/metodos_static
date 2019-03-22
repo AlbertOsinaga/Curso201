@@ -1,0 +1,19 @@
+using System;
+using static System.Console;
+public class GranPrograma
+{
+  public static void Main()
+  {
+    int suma = Suma(106, 237);
+  }
+  private static int Suma(int x, int y)
+  {
+    int z = x + y;
+    PrintSuma(x, y, z);
+    return z;
+  }
+  private static void PrintSuma(int x, int y, int z)
+  {
+    WriteLine($"{x} + {y} = {z}");
+  }
+}

@@ -1,0 +1,23 @@
+using System;
+using static System.Console;
+
+public class Program
+{
+  public static void Main()
+  {
+    string[] dias = {"Lunes", "Martes", "Miércoles", 
+              "Jueves", "Viernes", "Sábado", "Domingo"};
+    string[] diasCopia = new string[7];          
+    Array.Copy(dias, diasCopia, 7);
+    Array.Reverse(diasCopia);
+    foreach(string dia in diasCopia)
+      Write($"{dia} ");
+    Array.Sort(diasCopia);
+    WriteLine();
+    foreach(string dia in diasCopia)
+      Write($"{dia} ");
+    WriteLine();
+    foreach(string dia in dias)
+      Write($"{dia} ");
+  }
+}
