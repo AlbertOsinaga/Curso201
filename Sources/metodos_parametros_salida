@@ -5,13 +5,13 @@ public class Programa
 {
   public static void Main()
   {
-    string scifra = "397.90";
-    // cifra = int.Parse(scifra);
+    string scifra = "390.98";
+    // int cifra = int.Parse(scifra);
     bool parseOk = int.TryParse(scifra, out int cifra);
-    if(parseOk)    
-      WriteLine($"cifra como int = {cifra};");
-    parseOk = double.TryParse(scifra, out double dcifra);
-    if(parseOk)  
-      WriteLine($"cifra como double = {dcifra};");
+    if(parseOk) 
+      WriteLine($"cifra como int = {cifra}");
+    parseOk = double.TryParse(scifra, out double dcifra);  
+    if(parseOk) 
+      WriteLine($"cifra como double = {dcifra}");
   }
 }

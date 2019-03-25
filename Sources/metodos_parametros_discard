@@ -1,0 +1,13 @@
+using System;
+using static System.Console;
+
+public class Programa
+{
+  public static void Main()
+  {
+    string scifra = "390.98";
+    // int cifra = int.Parse(scifra);
+    bool parseOk = int.TryParse(scifra, out _);
+    WriteLine("cifra es un int " + (parseOk ? "válido" : "inválido"));
+  }
+}
