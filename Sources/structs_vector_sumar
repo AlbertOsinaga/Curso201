@@ -1,0 +1,28 @@
+using System;
+using static System.Console;
+
+public class Program
+{
+  public static void Main()
+  {
+    Vector v; v.x = 37.7; v.y = 26.5;
+    var u = new Vector { x = 500, y = 400};
+    Vector w = v.Sumar(u); 
+    WriteLine($"w = {v} + {u} = {w}");
+  }
+  private struct Vector
+  {
+    public double x;
+    public double y;
+    
+    public Vector(double t, double u)
+    {
+      x = t; y = u;
+    }
+    public Vector Sumar(Vector w) => new Vector() { x = x + w.x, y = y + w.y}; 
+    public override string ToString()
+    {
+      return $"({x}, {y})";
+    }
+  }
+}

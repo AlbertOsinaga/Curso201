@@ -1,0 +1,19 @@
+using System;
+using static System.Console;
+
+public class Program
+{
+  public static void Main()
+  {
+    Vector v; 
+    v.x = 37.7; 
+    v.y = 26.5;
+    WriteLine($"Vector v = ({v.x}, {v.y})");
+  }
+
+  private struct Vector
+  {
+    public double x;
+    public double y;
+  }
+}

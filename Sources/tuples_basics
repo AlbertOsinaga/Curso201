@@ -1,0 +1,12 @@
+using System;
+using static System.Console;
+
+public class Program
+{
+  public static void Main()
+  {
+    var t = (45, "Error", true); 
+    WriteLine($"Tuple t = {t}");
+    WriteLine($"Type Tuple : {t.GetType()}");
+  }
+}
