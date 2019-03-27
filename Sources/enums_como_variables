@@ -1,0 +1,37 @@
+using System;
+using static System.Console;
+
+public enum Clima
+{
+  Helado,
+  Frio,
+  Templado,
+  Tibio,
+  Caliente
+} 
+public class Programa
+{
+  public static void Main()
+  {
+    Clima clima = Clima.Frio;
+    string consejo = ConsejoClima(clima);
+    WriteLine($"Nuestro consejo de acuerdo al clima es:\n'{consejo}'");
+  }
+  public static string ConsejoClima(Clima clima)
+  {
+    string consejo = null;
+    switch(clima)
+    {
+      case Clima.Helado:
+        consejo = "Usar ropa muy abrigada!";
+        break;
+      case Clima.Caliente:
+        consejo = "Usar ropa muy liviana!";
+        break;
+      default:  
+        consejo = "Usar ropa de media estación!";
+        break;
+    }
+    return consejo;
+  }
+}

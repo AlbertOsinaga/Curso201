@@ -1,0 +1,14 @@
+public class Programa
+{
+  public static void Main()
+  {
+    LogMensaje(titulo: "ADVERTENCIA", 
+              usuario: "Nostradamus", mensaje: "El fin del mundo se acerca!!!");
+  }
+
+  public static void LogMensaje(string mensaje, 
+                string usuario = "Desconocido", string titulo = "MENSAJE")
+  {
+    WriteLine($"{titulo} : {mensaje}. AUTOR : {usuario}");
+  }
+}

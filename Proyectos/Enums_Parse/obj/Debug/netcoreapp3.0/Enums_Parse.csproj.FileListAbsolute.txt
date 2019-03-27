@@ -1,0 +1,12 @@
+/Users/luisosinaga/Dropbox/CursosLansoft/Curso201/Proyectos/Enums_Parse/bin/Debug/netcoreapp3.0/Enums_Parse
+/Users/luisosinaga/Dropbox/CursosLansoft/Curso201/Proyectos/Enums_Parse/bin/Debug/netcoreapp3.0/Enums_Parse.deps.json
+/Users/luisosinaga/Dropbox/CursosLansoft/Curso201/Proyectos/Enums_Parse/bin/Debug/netcoreapp3.0/Enums_Parse.runtimeconfig.json
+/Users/luisosinaga/Dropbox/CursosLansoft/Curso201/Proyectos/Enums_Parse/bin/Debug/netcoreapp3.0/Enums_Parse.runtimeconfig.dev.json
+/Users/luisosinaga/Dropbox/CursosLansoft/Curso201/Proyectos/Enums_Parse/bin/Debug/netcoreapp3.0/Enums_Parse.dll
+/Users/luisosinaga/Dropbox/CursosLansoft/Curso201/Proyectos/Enums_Parse/bin/Debug/netcoreapp3.0/Enums_Parse.pdb
+/Users/luisosinaga/Dropbox/CursosLansoft/Curso201/Proyectos/Enums_Parse/obj/Debug/netcoreapp3.0/Enums_Parse.csprojAssemblyReference.cache
+/Users/luisosinaga/Dropbox/CursosLansoft/Curso201/Proyectos/Enums_Parse/obj/Debug/netcoreapp3.0/Enums_Parse.csproj.CoreCompileInputs.cache
+/Users/luisosinaga/Dropbox/CursosLansoft/Curso201/Proyectos/Enums_Parse/obj/Debug/netcoreapp3.0/Enums_Parse.AssemblyInfoInputs.cache
+/Users/luisosinaga/Dropbox/CursosLansoft/Curso201/Proyectos/Enums_Parse/obj/Debug/netcoreapp3.0/Enums_Parse.AssemblyInfo.cs
+/Users/luisosinaga/Dropbox/CursosLansoft/Curso201/Proyectos/Enums_Parse/obj/Debug/netcoreapp3.0/Enums_Parse.dll
+/Users/luisosinaga/Dropbox/CursosLansoft/Curso201/Proyectos/Enums_Parse/obj/Debug/netcoreapp3.0/Enums_Parse.pdb

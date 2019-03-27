@@ -1,0 +1,16 @@
+using System;
+using static System.Console;
+
+public class GranPrograma
+{
+  public static void Main()
+  {
+    LogMensaje("Parámetros Opcionales!!!");
+  }
+
+  public static void LogMensaje(string mensaje, 
+                string usuario = "Desconocido", string titulo = "MENSAJE")
+  {
+    WriteLine($"{titulo} : {mensaje}. AUTOR : {usuario}");
+  }
+}

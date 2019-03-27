@@ -1,0 +1,14 @@
+{
+  "ProjectFilePath": "/Users/luisosinaga/Dropbox/CursosLansoft/Curso201/Proyectos/Enums_Parse/Enums_Parse.csproj",
+  "TargetFramework": "netcoreapp3.0",
+  "TagHelpers": [],
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  }
+}

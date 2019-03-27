@@ -1,0 +1,19 @@
+using System;
+using static System.Console;
+
+public class GranPrograma
+{
+  public static void Main()
+  {
+    // var numeros = new double[] {253.75, 277.35, 294.15, 222.86};
+    WriteLine($"Sumatoria = {Calculadora.Sumatoria(253.75, 277.35, 294.15, 222.86)}");
+  }
+}
+public static class Calculadora
+{
+  public static int Suma(int x, int y) => x + y;
+  public static int Resta(int x, int y) => x - y;
+  public static int Multiplicacion(int x, int y) => x * y;
+  public static int Division(int x, int y) => x / y;
+  public static double Sumatoria(params double[] nums) => nums.Sum();
+} 
