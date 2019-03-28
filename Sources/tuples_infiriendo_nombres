@@ -1,0 +1,21 @@
+using System;
+using static System.Console;
+// C# 7.1
+public class Program
+{
+  public static void Main()
+  {
+    Vector v = new Vector() {x = 100, y = 200}; 
+    var tuple = (v.x, v.y);
+    WriteLine($"Vector v = ({v.x}, {v.y})");
+    WriteLine($"Tuple tuple = {tuple}");
+    WriteLine($"tuple.x = {tuple.x}");
+    WriteLine($"tuple.y = {tuple.y}");
+  }
+
+  private struct Vector
+  {
+    public double x;
+    public double y;
+  }
+}

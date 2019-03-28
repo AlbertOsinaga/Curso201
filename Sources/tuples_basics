@@ -5,8 +5,11 @@ public class Program
 {
   public static void Main()
   {
-    var t = (45, "Error", true); 
-    WriteLine($"Tuple t = {t}");
-    WriteLine($"Type Tuple : {t.GetType()}");
+    var tuple = (45, "Error", true); 
+    WriteLine($"Tuple tuple = {tuple}");
+    WriteLine($"tuple.Item1 : {tuple.Item1}");
+    WriteLine($"tuple.Item2 : {tuple.Item2}");
+    WriteLine($"tuple.Item3 : {tuple.Item3}");
+    WriteLine($"Type Tuple : {tuple.GetType()}");
   }
 }

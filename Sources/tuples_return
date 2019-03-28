@@ -1,0 +1,20 @@
+using System;
+using static System.Console;
+public class Program
+{
+  public static void Main()
+  {
+    DatosPersonales(out string nom, out string ap, out int edad, out char sexo);
+    var dp = DatosPersonales();
+    WriteLine($"Con variables out : {nom} {ap}, edad ({edad}), sexo ({sexo})");
+    WriteLine($"Con tuple : {dp.nom} {dp.ap}, edad ({dp.edad}), sexo ({dp.sexo})");
+  }
+  private static void DatosPersonales(out string nom, out string ap, out int edad, out char sexo)
+  {
+    nom = "Mario"; ap = "Bross"; edad = 27; sexo = 'M';  
+  }
+  private static (string nom, string ap, int edad, char sexo) DatosPersonales()
+  {
+    return ("Ana", "Bross", 33, 'F');
+  }
+}

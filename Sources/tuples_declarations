@@ -1,0 +1,15 @@
+public class Program
+{
+  public static void Main()
+  {
+    (int, string, bool) tuple = (45, "Error", true); 
+    (int codigo, string mensaje, bool severo) error = (35, "Error de conexión", true); 
+    var warning = (codigo: 12, mensaje: "Fuera de línea", severo: false); 
+    WriteLine($"Tuple tuple = {tuple}");
+    WriteLine($"Tuple error = {error}");
+    WriteLine($"Tuple warning = {warning}");
+    WriteLine($"error.codigo : {error.codigo}");
+    WriteLine($"error.mensaje : {error.mensaje}");
+    WriteLine($"error.severo : {error.severo}");
+  }
+}

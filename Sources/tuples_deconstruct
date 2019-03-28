@@ -1,0 +1,18 @@
+using System;
+using static System.Console;
+// C# 7.1
+public class Program
+{
+  public static void Main()
+  {
+    Vector v = new Vector() {x = 100, y = 200}; 
+    var vtuple = v.Deconstruct();
+    WriteLine($"Tuple vtuple = {vtuple}");
+    WriteLine($"vtuple.x = {vtuple.Xpos}");
+    WriteLine($"vtuple.y = {vtuple.Ypos}");
+  }
+  private struct Vector
+  { public double x; public double y;
+    public (double Xpos, double Ypos) Deconstruct() => (x, y); 
+  }
+}
