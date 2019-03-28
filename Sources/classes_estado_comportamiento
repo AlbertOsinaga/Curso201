@@ -1,0 +1,34 @@
+using System;
+using static System.Console;
+using static System.Math;
+
+public class Robot
+{
+  // Estado (variables de clase)
+  public string nombre;
+  public string habilidad;
+  
+  // Comportamiento (Métodos)
+  public string Saluda(string persona) => 
+      $"Hola {persona}";
+  public string MiNombre() => 
+      $"Mi nombre es {nombre}.\n Se {habilidad}!";
+  public int Suma(int x, int y) => x + y;
+  public double Raiz(double x) => Sqrt(x);
+}
+
+public class Programa
+{
+  public static void Main()
+  {
+    WriteLine("--------------------------------");
+    Robot robot = new Robot();
+    robot.nombre = "Mr. Robot";
+    robot.habilidad = "sumar";
+    System.Console.WriteLine($"{robot.MiNombre()}");
+    robot.nombre = "Sir Robot";
+    robot.habilidad = "calcular raices cuadradas";
+    System.Console.WriteLine($"{robot.MiNombre()}");
+    WriteLine("--------------------------------");
+  }
+}

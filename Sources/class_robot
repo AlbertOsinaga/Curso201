@@ -1,0 +1,16 @@
+using System;
+
+public class ElPrograma
+{
+  public static void Main()
+  {
+    Console.WriteLine($"{Robot.Saluda("Mario Bross")}");
+    Console.WriteLine($"{Robot.Suma(25, 45)}");
+  }
+}
+
+public struct Robot
+{
+  public static string Saluda(string persona) => $"Hola {persona}";
+  public static int Suma(int x, int y) => x + y;
+}

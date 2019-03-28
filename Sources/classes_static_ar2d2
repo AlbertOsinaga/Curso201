@@ -1,0 +1,23 @@
+using System;
+using static System.Console;
+
+public class ElPrograma
+{
+  public static void Main()
+  {
+    Robot.nombre = "Mr. Robot";
+    Console.WriteLine($"{Robot.Saluda("Mario Bross")}");
+    System.Console.WriteLine($"{Robot.MiNombre()}");
+    Console.WriteLine($"25 + 45 = {Robot.Suma(25, 45)}");
+    Robot.nombre = "Ar2D2";
+    System.Console.WriteLine($"{Robot.MiNombre()}");
+  }
+}
+
+public struct Robot
+{
+  public static string nombre;
+  public static string Saluda(string persona) => $"Hola {persona}";
+  public static int Suma(int x, int y) => x + y;
+  public static string MiNombre() => $"Mi nombre es {nombre}. Se sumar!";
+}
