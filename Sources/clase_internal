@@ -1,0 +1,17 @@
+public class Programa
+{
+  public static void Main()
+  {
+    Robot robot = new Robot();
+    Robot robotina = new Robot();
+    Console.WriteLine($"{robot.Saluda("Mario Bross")}");
+    Console.WriteLine($"La suma es {robot.Suma(25, 45)}");
+    Console.WriteLine($"{robotina.Saluda("María Dolores")}");
+  }
+}
+
+internal class Robot
+{
+  public string Saluda(string persona) => $"Hola {persona}";
+  public int Suma(int x, int y) => x + y;
+}

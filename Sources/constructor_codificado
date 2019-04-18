@@ -1,0 +1,28 @@
+public class Robot
+{
+  // Campos o Variables de instancia 
+  public string nombre;
+  public string habilidad;
+  public int año;
+  
+  // Constructor
+  public Robot(string nombre, string habilidad, int año)
+  {
+    this.nombre = nombre;
+    this.habilidad = habilidad;
+    this.año = año;
+  }
+
+  // Métodos o funciones
+  public string MiNombre() => $"Mi nombre es {nombre}.\n " + 
+                    $"Se {habilidad}!\n Soy del año {año}";
+}
+
+public class Programa
+{
+  public static void Main()
+  {
+    Robot robot = new Robot("Mr. Robot", "saludar", 2009);
+    System.Console.WriteLine($"{robot.MiNombre()}");
+  }
+}

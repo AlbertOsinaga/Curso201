@@ -1,0 +1,19 @@
+using System;
+using static System.Console;
+
+public static class Funcion
+{
+  // Variables o campos de clase
+  static string[] mes = {"Dummy", "Enero", "Febrero", 
+        "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", 
+        "Septiembre", "Octubre", "Noviembre", "Diciembre"};
+  
+  static Funcion() => WriteLine("Hello constructor static....");
+  // Métodos o funciones de clase
+  public static string FechaLiteral(DateTime fecha) => $"{fecha.Day} de {mes[fecha.Month]} de {fecha.Year}";
+}
+
+public class Programa
+{
+  public static void Main() => WriteLine(Funcion.FechaLiteral(DateTime.Now));
+}

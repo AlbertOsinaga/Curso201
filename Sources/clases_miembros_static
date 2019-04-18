@@ -1,0 +1,50 @@
+using System;
+using static System.Console;
+
+public class Robot
+{
+  // Campos o variables de clase (static) 
+  public static int nro_robots;
+
+  // Campos o Variables de instancia 
+  public string nombre;
+  public string habilidad;
+  public int año;
+  
+  // Constructores
+  public Robot(string nombre = "NN", 
+      string habilidad = "nada", int año = 2000)
+  {
+    this.nombre = nombre;
+    this.habilidad = habilidad;
+    this.año = año;
+    Robot.nro_robots++;
+    WriteLine($"Robot # {nro_robots}. " + 
+              $"'{this.nombre}' construido!");
+  }
+
+  // Métodos o funciones
+  public string MiNombre() => $"Mi nombre es {nombre}." + 
+                    $" Se {habilidad}! Soy del año {año}";
+  public static int NroRobots()
+  {
+    return nro_robots;
+  }
+}
+
+public class Programa
+{
+  public static void Main()
+  {
+    Robot robot1 = new Robot();
+    Robot robot2 = new Robot("Cerox");
+    Robot robot3 = new Robot("Ar2r2", "saludar");
+    Robot robot4 = new Robot("Mr. Robot", "AI", 2009);
+    var robots = new Robot[] {robot1, robot2, robot3, robot4};
+    WriteLine("----------------------------------------------");
+    WriteLine($"Robots construidos: {Robot.NroRobots()}");
+    WriteLine("----------------------------------------------");
+    foreach(var robot in robots)
+      WriteLine($"{robot.MiNombre()}");
+  }
+}
