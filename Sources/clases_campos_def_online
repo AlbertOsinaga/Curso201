@@ -1,0 +1,38 @@
+public class Robot
+{
+  // Campos o Variables de instancia 
+  public string nombre = "NN";
+  public string habilidad = "nada";
+  public int año = 1999;
+  
+  // Constructores
+  public Robot(): this(default, default, default) {}
+  public Robot(int año) => this.año = año;
+  public Robot(string nombre, string habilidad = default, int año = 0)
+  {
+    if(nombre != null) this.nombre = nombre;
+    if(habilidad != null) this.habilidad = habilidad;
+    if(año > 0) this.año = año;
+    WriteLine($"Robot '{this.nombre}' construido!");
+  }
+
+  // Métodos o funciones
+  public string MiNombre() => $"Mi nombre es {nombre}." + 
+                    $" Se {habilidad}! Soy del año {año}";
+}
+
+public class Programa
+{
+  public static void Main()
+  {
+    Robot robot1 = new Robot();
+    Robot robot2 = new Robot("Cerox");
+    Robot robot3 = new Robot("Ar2r2", "saludar");
+    Robot robot4 = new Robot("Mr. Robot", "AI", 2009);
+    Robot robot5 = new Robot(2019);
+    var robots = new Robot[] {robot1, robot2, robot3, robot4, robot5};
+    WriteLine("----------------------------------------------");
+    foreach(var robot in robots)
+      WriteLine($"{robot.MiNombre()}");
+  }
+}

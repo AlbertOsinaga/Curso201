@@ -1,0 +1,62 @@
+using System;
+using static System.Console;
+
+public class Robot
+{
+  // Campos o variables de clase (static) 
+  private static int _nro_robots;
+  private static int _año_inicial;
+
+  // Campos o Variables de instancia 
+  private string _nombre;
+  private string _habilidad;
+  private int _año;
+
+  // Métodos o funciones accessors
+  public static int GetNroRobots() => _nro_robots;
+  public int GetAño() {return _año;} 
+  public string GetNombre() => _nombre;
+  public string GetHabilidad() => _habilidad;
+  public void SetHabilidad(string habilidad) => _habilidad = habilidad;
+  // ..................
+
+  // Constructores
+  static Robot()
+  {
+    _año_inicial = 1999;
+  }
+  public Robot(string nombre = "NN", 
+      string habilidad = "nada", int año = 0)
+  {
+    this._nombre = nombre;
+    _habilidad = habilidad;
+    _año = año > 0? año : _año_inicial;
+    _nro_robots++;
+    // WriteLine($"Robot # {_nro_robots}. " + 
+    //          $"'{this._nombre}' construido!");
+  }
+
+  // Métodos o funciones
+  public string MiNombre() => $"Mi nombre es {_nombre}." + 
+                    $" Se {_habilidad}! Soy del año {_año}";
+}
+
+public class Programa
+{
+  public static void Main()
+  {
+    Robot robot1 = new Robot();
+    Robot robot2 = new Robot("Cerox");
+    Robot robot3 = new Robot("Ar2r2", "saludar");
+    robot3.SetHabilidad("hablar");
+    Robot robot4 = new Robot("Mr. Robot", "AI", 2009);
+    robot4.SetHabilidad("Inteligencia Artificial");
+    var robots = new Robot[] {robot1, robot2, robot3, robot4};
+    WriteLine($"Robots construidos: {Robot.GetNroRobots()}");
+    WriteLine("----------------------------------------------");
+    foreach(var robot in robots)
+      WriteLine($"Robot Nombre: {robot.GetNombre()}. " + 
+                $"Habilidad: {robot.GetHabilidad()}. " +
+                $"Año: {robot.GetAño()}");
+  }
+}

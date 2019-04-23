@@ -1,0 +1,60 @@
+using System;
+using static System.Console;
+
+public class Robot
+{
+  // Campos o variables de clase (static) 
+  private static int _nro_robots;
+  private static int _año_inicial;
+  // ...................
+  // Campos y propiedades 
+  private string _habilidad;
+  public string Habilidad
+  {
+    get { return _habilidad;}
+    set { _habilidad = value;}
+  }
+  private string _nombre;  
+  public string Nombre { get => _nombre; set => _nombre = value; }
+  private int _año;
+  public int Año { get => _año; set => _año = value; }
+
+  // ..................
+
+  // Constructores
+  static Robot()
+  {
+    _año_inicial = 1999;
+  }
+  public Robot(string nombre = "NN", 
+      string habilidad = "nada", int año = 0)
+  {
+    this._nombre = nombre;
+    _habilidad = habilidad;
+    _año = año > 0? año : _año_inicial;
+    _nro_robots++;
+    // WriteLine($"Robot # {_nro_robots}. " + 
+    //          $"'{this._nombre}' construido!");
+  }
+
+  // Métodos o funciones
+  public string MiNombre() => $"Mi nombre es {_nombre}." + 
+                    $" Se {_habilidad}! Soy del año {_año}";
+}
+
+public class Programa
+{
+  public static void Main()
+  {
+    Robot robot1 = new Robot();
+    robot1.Nombre = "Mr. Robot";
+    Robot robot2 = new Robot("Cerox");
+    Robot robot3 = new Robot("Ar2r2", "saludar");
+    robot3.Habilidad = "hablar";
+    var robots = new Robot[] {robot1, robot2, robot3};
+    foreach(var robot in robots)
+      WriteLine($"Robot Nombre: {robot.Nombre}. " + 
+                $"Habilidad: {robot.Habilidad}. " +
+                $"Año: {robot.Año}");
+  }
+}
