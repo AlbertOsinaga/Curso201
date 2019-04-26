@@ -1,0 +1,46 @@
+using System;
+using static System.Console;
+
+public class Robot
+{
+  // Propiedades de clase (static) 
+  public static int NroDeRobots { get; private set;}
+  public static int AñoInicial { get; set; } = 1999;
+  // Propiedades de instancia 
+  public string Habilidad { get; set; }
+  public string Nombre { get; set; }
+  public int Año { get; set; }
+
+  // Constructores
+  static Robot() => AñoInicial = 2001;
+  public Robot(string nombre = "NN", 
+      string habilidad = "nada", int año = 0)
+  {
+    this.Nombre = nombre;
+    this.Habilidad = habilidad;
+    this.Año = año > 0? año : AñoInicial;
+    NroDeRobots++;
+  }
+
+  // Métodos o funciones
+  public string MiNombre() => $"Mi nombre es {Nombre}." + 
+                    $" Se {Habilidad}! Soy del año {Año}";
+}
+
+public class Programa
+{
+  public static void Main()
+  {
+    Robot robot1 = new Robot();
+    robot1.Nombre = "Mr. Robot";
+    Robot robot2 = new Robot("Cerox");
+    Robot robot3 = new Robot("Ar2r2", "saludar");
+    robot3.Habilidad = "hablar";
+    var robots = new Robot[] {robot1, robot2, robot3};
+    foreach(var robot in robots)
+      WriteLine($"Robot Nombre: {robot.Nombre}. " + 
+                $"Habilidad: {robot.Habilidad}. " +
+                $"Año: {robot.Año}");
+    WriteLine($"Total robots: {Robot.NroDeRobots}");
+  }
+}
